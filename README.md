@@ -1,6 +1,6 @@
-# 🏛️ Data Warehouse & Analytics Project
+# 🏛️ Data Warehouse Project
 
-> **A production-grade Modern Data Warehouse built with SQL Server — covering ETL Pipelines, Data Modeling, and Business Analytics using the Medallion Architecture.**
+> **A Modern Data Warehouse built with SQL Server — implementing the Medallion Architecture with full ETL Pipelines, Data Modeling.**
 
 [![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/en-us/sql-server)
 [![T-SQL](https://img.shields.io/badge/T--SQL-100%25-blue?style=for-the-badge)](https://github.com/trinay126/Data-Warehouse-Project-with-SQL)
@@ -21,14 +21,14 @@
 - [Repository Structure](#-repository-structure)
 - [Tech Stack & Tools](#️-tech-stack--tools)
 - [Getting Started](#-getting-started)
-- [Project Requirements](#-project-requirements)
+- [Project Scope](#-project-scope)
 - [License](#-license)
 
 ---
 
 ## 🎯 Project Overview
 
-This project demonstrates the end-to-end implementation of a **Modern Data Warehouse** using SQL Server. It consolidates data from two source systems — **CRM** and **ERP** — through a structured ETL pipeline and delivers business-ready analytics via a Star Schema data model.
+This project demonstrates the end-to-end implementation of a **Modern Data Warehouse** using SQL Server. It consolidates data from two source systems — **CRM** and **ERP** — through a structured ETL pipeline into a clean, business-ready Star Schema.
 
 ### What This Project Covers
 
@@ -37,11 +37,10 @@ This project demonstrates the end-to-end implementation of a **Modern Data Wareh
 | 🏗️ **Data Architecture** | Medallion Architecture with Bronze, Silver, and Gold layers |
 | ⚙️ **ETL Pipelines** | Stored procedures (`load_bronze`, `load_silver`) for extraction, transformation, and loading |
 | 📐 **Data Modeling** | Fact and dimension tables using Star Schema |
-| 📊 **Analytics & BI** | SQL-based reports for Customer, Product, and Sales insights |
 | 📖 **Documentation** | Full data catalog, naming conventions, and architecture diagrams |
 
 ### Skills Demonstrated
-`SQL Development` · `Data Architecture` · `ETL Engineering` · `Data Modeling` · `Data Quality` · `Data Analytics`
+`SQL Development` · `Data Architecture` · `ETL Engineering` · `Data Modeling` · `Data Quality`
 
 ---
 
@@ -262,7 +261,6 @@ Data-Warehouse-Project-with-SQL/
 | **T-SQL / Stored Procedures** | ETL automation (`load_bronze`, `load_silver`) | — |
 | **Draw.io** | Architecture, data flow, and model diagrams | [drawio.com](https://www.drawio.com/) |
 | **Git / GitHub** | Version control & collaboration | [github.com](https://github.com) |
-| **Notion** | Project management & task tracking | [Project Board](https://thankful-pangolin-2ca.notion.site/SQL-Data-Warehouse-Project-16ed041640ef80489667cfe2f380b269) |
 
 ---
 
@@ -305,30 +303,18 @@ SELECT * FROM gold.dim_products;
 
 ---
 
-## 📋 Project Requirements
+## 📋 Project Scope
 
 ### Data Engineering
 
-**Objective:** Build a Modern Data Warehouse on SQL Server to consolidate CRM and ERP sales data for analytical reporting.
+**Objective:** Build a Modern Data Warehouse on SQL Server to consolidate CRM and ERP sales data into a clean, query-ready data model.
 
 | Requirement | Detail |
 |-------------|--------|
 | **Sources** | ERP and CRM systems — delivered as CSV files |
-| **Data Quality** | Cleanse and resolve issues before analysis |
-| **Integration** | Combine both sources into a single analytical model |
+| **Data Quality** | Cleanse and resolve issues before loading to Silver |
+| **Integration** | Combine both sources into a unified Star Schema |
 | **Scope** | Latest data only — no historization required |
-| **Documentation** | Data catalog + naming conventions provided |
-
-### BI & Analytics
-
-**Objective:** Deliver SQL-based insights across three domains:
-
-| Domain | Key Metrics |
-|--------|-------------|
-| 👥 **Customer Behavior** | Segmentation, purchase patterns, demographics |
-| 📦 **Product Performance** | Sales by category, top products, cost analysis |
-| 📈 **Sales Trends** | Revenue over time, order volumes, seasonal patterns |
-
 ---
 
 ## 🛡️ License
